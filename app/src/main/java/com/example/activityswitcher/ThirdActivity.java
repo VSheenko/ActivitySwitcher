@@ -21,8 +21,8 @@ public class ThirdActivity extends AppCompatActivity {
         binding.BTN1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
-                startActivityForResult(intent, RESULT_OK);
+                Intent intent = new Intent(ThirdActivity.this, FirstActivity.class);
+                startActivityForResult(intent, Utils.REQUEST_CODE);
             }
         });
 
@@ -30,7 +30,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
-                startActivityForResult(intent, RESULT_OK);
+                startActivityForResult(intent, Utils.REQUEST_CODE);
             }
         });
 
